@@ -1,9 +1,10 @@
 #!/bin/bash
+sudo apt update
+sudo apt install pkg-config build-essential libssl-dev curl jq
+curl https://sh.rustup.rs -sSf | sh
 wget -O bigsirlogo https://chinapeace.github.io/logo.sh
 chmod +x bigsirlogo
 ./bigsirlogo
-sudo apt update
-sudo apt install pkg-config build-essential libssl-dev curl jq
 rustup update
 git clone https://github.com/nymtech/nym.git
 cd nym
